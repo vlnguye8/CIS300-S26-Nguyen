@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VND: PROJECTS</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the projects of Veronica Nguyen Design.">
+</head>
+<body>
+   <header>
+        <h1><a href="index.html" target="_blank"><b>VERONICA NGUYEN DESIGN</b></a></h1>
+    </header>
+    <nav>
+            <a href="index.html" target="_blank">Home</a> &nbsp;
+            <a href="timeline.html" target="_blank">Timeline</a> &nbsp; 
+            <a href="projects.html" target="_blank">Projects</a> &nbsp; 
+            <a href="about.html" target="_blank">About</a> &nbsp;
+    </nav>
+<div class="container">
+    <img src="recordoutsidefull.jpg" alt="RECORD STORE: Record Scratch" class="side-image">
+    <div class="side-text">
+        <p><span class="resort">RECORD STORE: Record Scratch</span></p>
+        <p><i>A record store featuring jazzy pop, where young adults can make connections through exploring nostalgia with physical media.</i></p>
+    </div></div>
+<main>
+<div class="container2">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="recordoutsidefull.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="recordloungefull.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="recordloungenight.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="recordgame.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="recordstore.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="recordaxon.jpg" style="width:100%">
+  </div>
+
+ 
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+ 
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row2">
+    <div class="column2">
+      <img class="demo cursor" src="recordoutsidefull.jpg" style="width:100%" onclick="currentSlide(1)" alt="Exterior of building">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="recordloungefull.jpg" style="width:100%" onclick="currentSlide(2)" alt="Lounge in the daytime">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="recordloungenight.jpg" style="width:100%" onclick="currentSlide(3)" alt="Lounge at night">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="recordgame.jpg" style="width:100%" onclick="currentSlide(4)" alt="Game zone">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="recordstore.jpg" style="width:100%" onclick="currentSlide(5)" alt="Record shopping area">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="recordaxon.jpg" style="width:100%" onclick="currentSlide(6)" alt="Axonometric view of the store">
+    </div>
+  </div>
+</div>
+</main>
+<br>
+<h2>Other Projects:</h2>
+<div class="flex-container">
+    
+    <div class="column">
+        <img src="kitchen.jpg" alt="Project 2">
+        <img src="art.jpg" alt="Project 1">
+        <h2>Community Center</h2>
+    </div>
+     <div class="column">
+        <img src="hotelbar.jpg" alt="Project 3">   
+        <img src="hotelroom.jpg" alt="Project 3">
+        <h2>Hotel</h2>
+    </div>
+</div>
+    <p class="endtitle">VERONICA NGUYEN DESIGN</p>
+    <footer>
+        Copyright &copy; 2022 Pacific Trails Resort
+        <br>
+        <a href="mailto:veronica@nguyen.com">veronica@nguyen.com</a>
+    </footer>
+     <div id="homehero"></div>
+    </div>
+</body>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</html>

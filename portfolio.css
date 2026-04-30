@@ -87,6 +87,19 @@ main {padding-top: 1px;
   gap: 5em;
   background-size: 100% 100%;
   background-color: rgb(247, 234, 219);
+  
+}
+
+.about-image {
+  border-radius: 50%;   
+  max-width: 30%; ;
+}
+.meimage {
+  display: center;
+  align-items: center;
+  gap: 5em;
+  background-size: 100% 100%;
+ 
 }
 .center-image {
   flex: 1;
@@ -103,7 +116,9 @@ main {padding-top: 1px;
   font-size: 18px;
   text-align: left;
 }
-
+.img {width: 100%;
+     height: auto;
+     border-radius: 5px;}
 .portrait {
   position: absolute;
   width: 200px;
@@ -246,3 +261,37 @@ margin-right: auto;}
 .demo:hover {
   opacity: 1;
 }
+
+
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: rgba(40, 138, 123, 0.687);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #ffb70e;
+}
+
+
+.container3 {
+  border-radius: 5px;
+  background-color: rgb(217, 224, 224);
+      padding: 20px}
